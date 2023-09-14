@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Camera Gallery</title>
+</head>
+<body>
+      <div class="video-container">
+        <video autoplay></video>
+    </div>
+    <div class="action-cont">
+        <div class="record-btn-cont">
+            <div class="record-btn"></div>
+        </div>
+        <div class="capture-btn-cont">
+            <div class="capture-btn"></div>
+        </div>
+    </div>
+    <div class="timer-cont">
+        <h1 class="timer">00:00:00</h1>
+    </div>
+    <div class="filter-cont">
+        <div class="filter orange"></div>
+        <div class="filter brown"></div>
+        <div class="filter pink"></div>
+        <div class="filter transparent"></div>
+    </div>
+    <div class="filter-layer"></div>
+    <span class="material-symbols-outlined gallery-icon">
+        perm_media
+    </span>
+
+    <script src="db.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        document.querySelector(".gallery-icon").addEventListener("click", function() {
+            location.assign("./gallery.html")
+        })
+    </script>
+</body>
+</html>
